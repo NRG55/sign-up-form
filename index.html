@@ -19,16 +19,57 @@
     </div>
     <div class="container">
         <div>
-        <p>
-            This is not a real online service! You know you need something
-            like this in your life to help you realize your deepest dreams.
-            Sign up <span>now</span> to get started.
-        </p>
-        <p>
-            You <span>know</span> you want to.
-        </p>
+            <p>
+                This is not a real online service! You know you need something
+                like this in your life to help you realize your deepest dreams.
+                Sign up <span>now</span> to get started.
+            </p>
+            <p>
+                You <span>know</span> you want to.
+            </p>
         </div>
-    </div>
-      
+        <div class="form-container">
+            <form id="form">
+                <h2>Let's do this!</h2>
+                <div  class="user-info">              
+                    <div class="user-input-set">
+                        <div>
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" id="first_name" name="first_name">
+                        </div>
+                        <div>
+                            <label for="last_name">LAST NAME</label>
+                            <input type="text" id="last_name" name="last_name">
+                        </div>
+                    </div>              
+                    <div class="user-input-set" >
+                        <div>
+                            <label for="mail">EMAIL</label>
+                            <input type="email" id="mail" name="user_email">
+                        </div>
+                        <div>
+                            <label for="phone_number">PHONE NUMBER</label>
+                            <input type="tel" id="phone_number" name="phone_number">
+                        </div>
+                    </div>
+                    <div class="user-input-set">
+                        <div>
+                            <label for="pwd">PASSWORD</label>
+                            <input type="password" id="pwd" name="user_password">
+                        </div>
+                        <div>
+                            <label for="confirm_pwd">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm_pwd" name="user_password">
+                        </div>
+                    </div>
+                </div>                
+            </form>
+        </div>
+        <button type="submit" form="form" id="create-account">Create Account</button>
+        <p>
+            Already have an account?
+            <a href="#" class="login-link">Log in</a>
+        </p>          
+    </div>      
 </body>
 </html>

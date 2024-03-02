@@ -1,3 +1,6 @@
+:root {
+    --left-gap: 50px;
+}
 @font-face {
     font-family: Norse-Bold;
     src: url('fonts/Norse-Bold.otf')
@@ -8,6 +11,7 @@ body {
     padding: 0;
     display: flex;
     min-height: 100vh;
+    font-family: sans-serif;
 }
 
 span {
@@ -46,7 +50,84 @@ a {
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
     flex: 4;
+    padding-left: var(--left-gap);
+    background-color: #eaf1ea;
 }
+
+#create-account {
+    cursor: pointer;
+    background-color: #596D48;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 40px;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 36px;
+    align-self: self-start;
+}   
+
+#create-account + p {
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+.login-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #596D48;  
+    
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius:3px;
+    width: 100%;
+    padding: 4px 8px;
+
+}
+
+input, label {
+    display: block;
+}
+
+label {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 2px;
+}
+
+
+.user-input-set {
+    display: flex;   
+} 
+
+.user-input-set > div {     
+   margin-right: 40px;
+   margin-bottom: 30px;   
+} 
+
+.form-container {
+    margin-left: calc(var(--left-gap) * -1);
+    box-shadow: 0 4px 4px 4px rgba(139, 136, 136, 0.4);
+    background-color: white;
+}
+
+form {
+    margin-left: var(--left-gap);
+    padding-bottom: 32px;
+}
+   
+.container > div:first-child  {
+    font-size: 1.6rem;
+    font-weight: bold;
+    max-width: 85%;
+    padding-bottom: 80px;
+   
+   
+}
+
